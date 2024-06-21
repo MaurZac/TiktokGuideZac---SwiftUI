@@ -6,19 +6,27 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct FeedCell: View {
-    let post: Int
+    let post: Post
+    var player: AVPlayer
+    
+    init(post: Post, player: AVPlayer) {
+        self.post = post
+        self.player = player
+    }
     var body: some View {
         ZStack{
-            Rectangle()
-                .fill(.pink)
-                .containerRelativeFrame([.horizontal, .vertical])
-                .overlay{
-                    Text("Post\(post)")
-                        .foregroundStyle(.white)
-                    
-                }
+//            if let videoURL = URL(string: post.videoUrl) {
+//                CustomVideoPlayer(player: AVPlayer(url: videoURL))
+//                    .containerRelativeFrame([.horizontal, .vertical])
+//            } else {
+//                Text("Invalid video URL")
+//                    .foregroundColor(.red)
+//            }
+            CustomVideoPlayer(player: player)
+                                .containerRelativeFrame([.horizontal, .vertical])
             VStack{
                 Spacer()
                 HStack(alignment: .bottom) {
@@ -94,9 +102,12 @@ struct FeedCell: View {
             }
             .padding()
         }
+        .onAppear{
+            
+        }
     }
 }
 
 #Preview {
-    FeedCell(post: 2)
+    FeedCell(post: Post(id: NSUUID().uuidString, videoUrl: ""), player: AVPlayer())
 }
