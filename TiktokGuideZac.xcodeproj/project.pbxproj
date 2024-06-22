@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B818B1C2C266C480074F582 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 8B818B1B2C266C480074F582 /* FirebaseAppCheck */; };
+		8B818B1E2C2674660074F582 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B818B1D2C2674660074F582 /* AuthService.swift */; };
+		8B818B202C2675820074F582 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B818B1F2C2675820074F582 /* LoginViewModel.swift */; };
+		8B818B222C2677400074F582 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B818B212C2677400074F582 /* RegistrationViewModel.swift */; };
+		8B818B242C2686E70074F582 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8B818B232C2686E70074F582 /* FirebaseAuth */; };
+		8B818B262C2686FC0074F582 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8B818B252C2686FC0074F582 /* FirebaseStorage */; };
+		8B818B282C2687080074F582 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8B818B272C2687080074F582 /* FirebaseDatabase */; };
+		8B818B2A2C2687080074F582 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8B818B292C2687080074F582 /* FirebaseDatabaseSwift */; };
+		8B818B2C2C26871A0074F582 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8B818B2B2C26871A0074F582 /* FirebaseFirestore */; };
+		8B818B2E2C26871A0074F582 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8B818B2D2C26871A0074F582 /* FirebaseFirestoreSwift */; };
+		8B818B302C268E560074F582 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B818B2F2C268E560074F582 /* ContentViewModel.swift */; };
 		8BA10F6F2C24A52D00D52B52 /* TiktokGuideZacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA10F6E2C24A52D00D52B52 /* TiktokGuideZacApp.swift */; };
 		8BA10F712C24A52D00D52B52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA10F702C24A52D00D52B52 /* ContentView.swift */; };
 		8BA10F732C24A52E00D52B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA10F722C24A52E00D52B52 /* Assets.xcassets */; };
@@ -25,9 +36,18 @@
 		8BA10FA52C25DF1400D52B52 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA10FA42C25DF1400D52B52 /* Post.swift */; };
 		8BA10FAA2C25E5B100D52B52 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA10FA92C25E5B100D52B52 /* FeedViewModel.swift */; };
 		8BA10FAE2C260E0500D52B52 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA10FAD2C260E0500D52B52 /* CustomVideoPlayer.swift */; };
+		8BA10FB52C263A5600D52B52 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA10FB42C263A5600D52B52 /* LogView.swift */; };
+		8BA10FB72C263A6A00D52B52 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA10FB62C263A6A00D52B52 /* RegistrationView.swift */; };
+		8BA10FB92C263DDE00D52B52 /* StandardTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA10FB82C263DDE00D52B52 /* StandardTextFieldModifier.swift */; };
+		8BA10FBB2C264E2300D52B52 /* AuthenticationFormProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA10FBA2C264E2300D52B52 /* AuthenticationFormProtocol.swift */; };
+		8BA10FBD2C26577100D52B52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BA10FBC2C26577100D52B52 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B818B1D2C2674660074F582 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		8B818B1F2C2675820074F582 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8B818B212C2677400074F582 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		8B818B2F2C268E560074F582 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		8BA10F6B2C24A52D00D52B52 /* TiktokGuideZac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiktokGuideZac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA10F6E2C24A52D00D52B52 /* TiktokGuideZacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiktokGuideZacApp.swift; sourceTree = "<group>"; };
 		8BA10F702C24A52D00D52B52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +67,11 @@
 		8BA10FA42C25DF1400D52B52 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8BA10FA92C25E5B100D52B52 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		8BA10FAD2C260E0500D52B52 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
+		8BA10FB42C263A5600D52B52 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		8BA10FB62C263A6A00D52B52 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		8BA10FB82C263DDE00D52B52 /* StandardTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTextFieldModifier.swift; sourceTree = "<group>"; };
+		8BA10FBA2C264E2300D52B52 /* AuthenticationFormProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFormProtocol.swift; sourceTree = "<group>"; };
+		8BA10FBC2C26577100D52B52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,17 +79,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B818B2A2C2687080074F582 /* FirebaseDatabaseSwift in Frameworks */,
+				8B818B1C2C266C480074F582 /* FirebaseAppCheck in Frameworks */,
+				8B818B242C2686E70074F582 /* FirebaseAuth in Frameworks */,
+				8B818B2E2C26871A0074F582 /* FirebaseFirestoreSwift in Frameworks */,
+				8B818B282C2687080074F582 /* FirebaseDatabase in Frameworks */,
+				8B818B262C2686FC0074F582 /* FirebaseStorage in Frameworks */,
+				8B818B2C2C26871A0074F582 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B818B1A2C266C080074F582 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8BA10F622C24A52D00D52B52 = {
 			isa = PBXGroup;
 			children = (
 				8BA10F6D2C24A52D00D52B52 /* TiktokGuideZac */,
 				8BA10F6C2C24A52D00D52B52 /* Products */,
+				8B818B1A2C266C080074F582 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +126,7 @@
 				8BA10F7D2C24DBE000D52B52 /* Services */,
 				8BA10F7C2C24DBDD00D52B52 /* Utils */,
 				8BA10F722C24A52E00D52B52 /* Assets.xcassets */,
+				8BA10FBC2C26577100D52B52 /* GoogleService-Info.plist */,
 				8BA10F742C24A52E00D52B52 /* Preview Content */,
 			);
 			path = TiktokGuideZac;
@@ -102,6 +143,7 @@
 		8BA10F7C2C24DBDD00D52B52 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8BA10FB82C263DDE00D52B52 /* StandardTextFieldModifier.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -181,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				8BA10F702C24A52D00D52B52 /* ContentView.swift */,
+				8B818B2F2C268E560074F582 /* ContentViewModel.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -232,6 +275,11 @@
 		8BA10F8B2C24DC6700D52B52 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				8BA10FB32C263A2400D52B52 /* AuthService */,
+				8BA10FB22C263A1D00D52B52 /* Protocols */,
+				8BA10FB12C263A1900D52B52 /* View */,
+				8BA10FB02C263A1700D52B52 /* ViewModel */,
+				8BA10FAF2C263A1400D52B52 /* Model */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -277,6 +325,47 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		8BA10FAF2C263A1400D52B52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8BA10FB02C263A1700D52B52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B818B1F2C2675820074F582 /* LoginViewModel.swift */,
+				8B818B212C2677400074F582 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8BA10FB12C263A1900D52B52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8BA10FB42C263A5600D52B52 /* LogView.swift */,
+				8BA10FB62C263A6A00D52B52 /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8BA10FB22C263A1D00D52B52 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8BA10FBA2C264E2300D52B52 /* AuthenticationFormProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8BA10FB32C263A2400D52B52 /* AuthService */ = {
+			isa = PBXGroup;
+			children = (
+				8B818B1D2C2674660074F582 /* AuthService.swift */,
+			);
+			path = AuthService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -293,6 +382,15 @@
 			dependencies = (
 			);
 			name = TiktokGuideZac;
+			packageProductDependencies = (
+				8B818B1B2C266C480074F582 /* FirebaseAppCheck */,
+				8B818B232C2686E70074F582 /* FirebaseAuth */,
+				8B818B252C2686FC0074F582 /* FirebaseStorage */,
+				8B818B272C2687080074F582 /* FirebaseDatabase */,
+				8B818B292C2687080074F582 /* FirebaseDatabaseSwift */,
+				8B818B2B2C26871A0074F582 /* FirebaseFirestore */,
+				8B818B2D2C26871A0074F582 /* FirebaseFirestoreSwift */,
+			);
 			productName = TiktokGuideZac;
 			productReference = 8BA10F6B2C24A52D00D52B52 /* TiktokGuideZac.app */;
 			productType = "com.apple.product-type.application";
@@ -321,6 +419,9 @@
 				Base,
 			);
 			mainGroup = 8BA10F622C24A52D00D52B52;
+			packageReferences = (
+				8BA10FBE2C266A6C00D52B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 8BA10F6C2C24A52D00D52B52 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +438,7 @@
 			files = (
 				8BA10F762C24A52E00D52B52 /* Preview Assets.xcassets in Resources */,
 				8BA10F732C24A52E00D52B52 /* Assets.xcassets in Resources */,
+				8BA10FBD2C26577100D52B52 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,16 +451,24 @@
 			files = (
 				8BA10F9D2C252CF200D52B52 /* CurrentUserProfileView.swift in Sources */,
 				8BA10FAE2C260E0500D52B52 /* CustomVideoPlayer.swift in Sources */,
+				8B818B202C2675820074F582 /* LoginViewModel.swift in Sources */,
 				8BA10F8F2C24FCB700D52B52 /* FeedView.swift in Sources */,
+				8BA10FB72C263A6A00D52B52 /* RegistrationView.swift in Sources */,
 				8BA10F912C2504E500D52B52 /* FeedCell.swift in Sources */,
+				8BA10FB92C263DDE00D52B52 /* StandardTextFieldModifier.swift in Sources */,
+				8B818B1E2C2674660074F582 /* AuthService.swift in Sources */,
+				8B818B302C268E560074F582 /* ContentViewModel.swift in Sources */,
 				8BA10FA32C25425000D52B52 /* UserStatView.swift in Sources */,
 				8BA10F9B2C252CD700D52B52 /* PostGridView.swift in Sources */,
 				8BA10FAA2C25E5B100D52B52 /* FeedViewModel.swift in Sources */,
 				8BA10FA52C25DF1400D52B52 /* Post.swift in Sources */,
+				8BA10FBB2C264E2300D52B52 /* AuthenticationFormProtocol.swift in Sources */,
+				8B818B222C2677400074F582 /* RegistrationViewModel.swift in Sources */,
 				8BA10F712C24A52D00D52B52 /* ContentView.swift in Sources */,
 				8BA10F6F2C24A52D00D52B52 /* TiktokGuideZacApp.swift in Sources */,
 				8BA10F932C251E3500D52B52 /* ExploreView.swift in Sources */,
 				8BA10F9F2C252D5A00D52B52 /* ProfileHeaderView.swift in Sources */,
+				8BA10FB52C263A5600D52B52 /* LogView.swift in Sources */,
 				8BA10F8D2C24F3B400D52B52 /* MainTabView.swift in Sources */,
 				8BA10F952C251FD500D52B52 /* UserCell.swift in Sources */,
 				8BA10F992C2523AC00D52B52 /* NotificationsCell.swift in Sources */,
@@ -568,6 +678,55 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8BA10FBE2C266A6C00D52B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B818B1B2C266C480074F582 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BA10FBE2C266A6C00D52B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		8B818B232C2686E70074F582 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BA10FBE2C266A6C00D52B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8B818B252C2686FC0074F582 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BA10FBE2C266A6C00D52B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		8B818B272C2687080074F582 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BA10FBE2C266A6C00D52B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		8B818B292C2687080074F582 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BA10FBE2C266A6C00D52B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		8B818B2B2C26871A0074F582 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BA10FBE2C266A6C00D52B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		8B818B2D2C26871A0074F582 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BA10FBE2C266A6C00D52B52 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8BA10F632C24A52D00D52B52 /* Project object */;
 }
