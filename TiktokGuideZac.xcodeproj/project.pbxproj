@@ -18,6 +18,11 @@
 		8B818B2C2C26871A0074F582 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8B818B2B2C26871A0074F582 /* FirebaseFirestore */; };
 		8B818B2E2C26871A0074F582 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8B818B2D2C26871A0074F582 /* FirebaseFirestoreSwift */; };
 		8B818B302C268E560074F582 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B818B2F2C268E560074F582 /* ContentViewModel.swift */; };
+		8B818B322C2B28930074F582 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B818B312C2B28930074F582 /* User.swift */; };
+		8B818B342C2B2AF80074F582 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B818B332C2B2AF80074F582 /* UserService.swift */; };
+		8B818B362C2BC74B0074F582 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B818B352C2BC74B0074F582 /* PreviewProvider.swift */; };
+		8B818B3A2C2BCD480074F582 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B818B392C2BCD480074F582 /* ExploreViewModel.swift */; };
+		8B818B3C2C2C86210074F582 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B818B3B2C2C86210074F582 /* UserProfileView.swift */; };
 		8BA10F6F2C24A52D00D52B52 /* TiktokGuideZacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA10F6E2C24A52D00D52B52 /* TiktokGuideZacApp.swift */; };
 		8BA10F712C24A52D00D52B52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA10F702C24A52D00D52B52 /* ContentView.swift */; };
 		8BA10F732C24A52E00D52B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA10F722C24A52E00D52B52 /* Assets.xcassets */; };
@@ -48,6 +53,11 @@
 		8B818B1F2C2675820074F582 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8B818B212C2677400074F582 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		8B818B2F2C268E560074F582 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		8B818B312C2B28930074F582 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8B818B332C2B2AF80074F582 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		8B818B352C2BC74B0074F582 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		8B818B392C2BCD480074F582 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		8B818B3B2C2C86210074F582 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		8BA10F6B2C24A52D00D52B52 /* TiktokGuideZac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiktokGuideZac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA10F6E2C24A52D00D52B52 /* TiktokGuideZacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiktokGuideZacApp.swift; sourceTree = "<group>"; };
 		8BA10F702C24A52D00D52B52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +107,23 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B818B372C2BCAE50074F582 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B818B392C2BCD480074F582 /* ExploreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B818B382C2BCAE80074F582 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8BA10F922C251E3500D52B52 /* ExploreView.swift */,
+				8BA10F942C251FD500D52B52 /* UserCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		8BA10F622C24A52D00D52B52 = {
@@ -151,6 +178,7 @@
 		8BA10F7D2C24DBE000D52B52 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8B818B332C2B2AF80074F582 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -159,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				8BA10FA42C25DF1400D52B52 /* Post.swift */,
+				8B818B312C2B28930074F582 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +195,7 @@
 		8BA10F7F2C24DBE600D52B52 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8B818B352C2BC74B0074F582 /* PreviewProvider.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -213,8 +243,8 @@
 		8BA10F842C24DC5200D52B52 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				8BA10F922C251E3500D52B52 /* ExploreView.swift */,
-				8BA10F942C251FD500D52B52 /* UserCell.swift */,
+				8B818B382C2BCAE80074F582 /* View */,
+				8B818B372C2BCAE50074F582 /* ViewModel */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -233,7 +263,6 @@
 			children = (
 				8BA10FA12C2541F700D52B52 /* Components */,
 				8BA10FA02C2541F100D52B52 /* View */,
-				8BA10F9C2C252CF200D52B52 /* CurrentUserProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -287,6 +316,8 @@
 		8BA10FA02C2541F100D52B52 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8BA10F9C2C252CF200D52B52 /* CurrentUserProfileView.swift */,
+				8B818B3B2C2C86210074F582 /* UserProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -452,8 +483,11 @@
 				8BA10F9D2C252CF200D52B52 /* CurrentUserProfileView.swift in Sources */,
 				8BA10FAE2C260E0500D52B52 /* CustomVideoPlayer.swift in Sources */,
 				8B818B202C2675820074F582 /* LoginViewModel.swift in Sources */,
+				8B818B322C2B28930074F582 /* User.swift in Sources */,
 				8BA10F8F2C24FCB700D52B52 /* FeedView.swift in Sources */,
 				8BA10FB72C263A6A00D52B52 /* RegistrationView.swift in Sources */,
+				8B818B342C2B2AF80074F582 /* UserService.swift in Sources */,
+				8B818B362C2BC74B0074F582 /* PreviewProvider.swift in Sources */,
 				8BA10F912C2504E500D52B52 /* FeedCell.swift in Sources */,
 				8BA10FB92C263DDE00D52B52 /* StandardTextFieldModifier.swift in Sources */,
 				8B818B1E2C2674660074F582 /* AuthService.swift in Sources */,
@@ -466,10 +500,12 @@
 				8B818B222C2677400074F582 /* RegistrationViewModel.swift in Sources */,
 				8BA10F712C24A52D00D52B52 /* ContentView.swift in Sources */,
 				8BA10F6F2C24A52D00D52B52 /* TiktokGuideZacApp.swift in Sources */,
+				8B818B3A2C2BCD480074F582 /* ExploreViewModel.swift in Sources */,
 				8BA10F932C251E3500D52B52 /* ExploreView.swift in Sources */,
 				8BA10F9F2C252D5A00D52B52 /* ProfileHeaderView.swift in Sources */,
 				8BA10FB52C263A5600D52B52 /* LogView.swift in Sources */,
 				8BA10F8D2C24F3B400D52B52 /* MainTabView.swift in Sources */,
+				8B818B3C2C2C86210074F582 /* UserProfileView.swift in Sources */,
 				8BA10F952C251FD500D52B52 /* UserCell.swift in Sources */,
 				8BA10F992C2523AC00D52B52 /* NotificationsCell.swift in Sources */,
 				8BA10F972C2523A100D52B52 /* NotificationsView.swift in Sources */,

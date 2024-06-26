@@ -34,6 +34,9 @@ struct FeedView: View {
                 player.play()
             }
         }
+        .onDisappear(perform: {
+            player.pause()
+        })
     }
     
     func playInitialVideoIfNecesary() {

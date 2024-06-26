@@ -11,7 +11,6 @@ import FirebaseCore
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    FirebaseApp.configure()
 
     return true
   }
@@ -20,7 +19,13 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct TiktokGuideZacApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    private let authService = AuthService()
+    private var authService: AuthService
+     init() {
+         FirebaseApp.configure()
+         authService = AuthService()
+         
+     }
+  
     var body: some Scene {
         WindowGroup {
             ContentView(authService: authService)
