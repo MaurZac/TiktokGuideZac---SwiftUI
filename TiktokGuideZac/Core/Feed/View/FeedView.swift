@@ -29,7 +29,6 @@ struct FeedView: View {
         .ignoresSafeArea()
         .onChange(of: scrollPostion) { oldValue, newValue in
            playVideoOnchangeOfScrollPosition(postId: newValue)
-            print("DEBUG:")
             if player.timeControlStatus.rawValue == 0 && oldValue != newValue {
                 player.play()
             }

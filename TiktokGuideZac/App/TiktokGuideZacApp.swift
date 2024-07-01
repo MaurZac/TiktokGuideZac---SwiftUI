@@ -19,16 +19,17 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct TiktokGuideZacApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    private var authService: AuthService
+    private let authService: AuthService
+    private let userService: UserService
      init() {
          FirebaseApp.configure()
          authService = AuthService()
-         
+         userService = UserService()
      }
   
     var body: some Scene {
         WindowGroup {
-            ContentView(authService: authService)
+            ContentView(authService: authService, userService: userService)
         }
     }
 }

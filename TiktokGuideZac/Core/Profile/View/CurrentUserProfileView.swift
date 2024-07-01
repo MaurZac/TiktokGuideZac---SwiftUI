@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CurrentUserProfileView: View {
-     let authService: AuthService
+    let authService: AuthService
+    let user: User
     
     
     var body: some View {
@@ -16,7 +17,7 @@ struct CurrentUserProfileView: View {
             ScrollView{
                 VStack(spacing: 2){
                     //profile header
-                    ProfileHeaderView(user: DeveloperPreview.user)
+                    ProfileHeaderView(user: user)
                     
                     //post grid view
                     PostGridView()
@@ -33,7 +34,7 @@ struct CurrentUserProfileView: View {
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .foregroundStyle(.black)
-
+                    
                 }
             }
         }
@@ -41,5 +42,5 @@ struct CurrentUserProfileView: View {
 }
 
 #Preview {
-    CurrentUserProfileView(authService: AuthService())
+    CurrentUserProfileView(authService: AuthService(), user: DeveloperPreview.user)
 }

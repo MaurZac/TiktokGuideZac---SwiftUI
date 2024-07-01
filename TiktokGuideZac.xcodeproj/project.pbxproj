@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B22AACE2C2FBFCF00CDD49D /* FireStoreConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22AACD2C2FBFCF00CDD49D /* FireStoreConstants.swift */; };
+		8B22AAD22C322DD400CDD49D /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22AAD12C322DD400CDD49D /* EditProfileView.swift */; };
+		8B22AAD52C32672000CDD49D /* EditProfileOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22AAD42C32672000CDD49D /* EditProfileOptions.swift */; };
 		8B818B1C2C266C480074F582 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 8B818B1B2C266C480074F582 /* FirebaseAppCheck */; };
 		8B818B1E2C2674660074F582 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B818B1D2C2674660074F582 /* AuthService.swift */; };
 		8B818B202C2675820074F582 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B818B1F2C2675820074F582 /* LoginViewModel.swift */; };
@@ -49,6 +52,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B22AACD2C2FBFCF00CDD49D /* FireStoreConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreConstants.swift; sourceTree = "<group>"; };
+		8B22AAD12C322DD400CDD49D /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		8B22AAD42C32672000CDD49D /* EditProfileOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileOptions.swift; sourceTree = "<group>"; };
 		8B818B1D2C2674660074F582 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8B818B1F2C2675820074F582 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8B818B212C2677400074F582 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
@@ -102,6 +108,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B22AACA2C2FBFAA00CDD49D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8B22AACD2C2FBFCF00CDD49D /* FireStoreConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8B22AACF2C322DBB00CDD49D /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				8B22AAD32C32670E00CDD49D /* Model */,
+				8B22AAD02C322DC300CDD49D /* View */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		8B22AAD02C322DC300CDD49D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B22AAD12C322DD400CDD49D /* EditProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B22AAD32C32670E00CDD49D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B22AAD42C32672000CDD49D /* EditProfileOptions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8B818B1A2C266C080074F582 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +209,7 @@
 		8BA10F7C2C24DBDD00D52B52 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8B22AACA2C2FBFAA00CDD49D /* Constants */,
 				8BA10FB82C263DDE00D52B52 /* StandardTextFieldModifier.swift */,
 			);
 			path = Utils;
@@ -261,6 +301,7 @@
 		8BA10F862C24DC5900D52B52 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				8B22AACF2C322DBB00CDD49D /* EditProfile */,
 				8BA10FA12C2541F700D52B52 /* Components */,
 				8BA10FA02C2541F100D52B52 /* View */,
 			);
@@ -487,6 +528,7 @@
 				8BA10F8F2C24FCB700D52B52 /* FeedView.swift in Sources */,
 				8BA10FB72C263A6A00D52B52 /* RegistrationView.swift in Sources */,
 				8B818B342C2B2AF80074F582 /* UserService.swift in Sources */,
+				8B22AACE2C2FBFCF00CDD49D /* FireStoreConstants.swift in Sources */,
 				8B818B362C2BC74B0074F582 /* PreviewProvider.swift in Sources */,
 				8BA10F912C2504E500D52B52 /* FeedCell.swift in Sources */,
 				8BA10FB92C263DDE00D52B52 /* StandardTextFieldModifier.swift in Sources */,
@@ -500,6 +542,8 @@
 				8B818B222C2677400074F582 /* RegistrationViewModel.swift in Sources */,
 				8BA10F712C24A52D00D52B52 /* ContentView.swift in Sources */,
 				8BA10F6F2C24A52D00D52B52 /* TiktokGuideZacApp.swift in Sources */,
+				8B22AAD22C322DD400CDD49D /* EditProfileView.swift in Sources */,
+				8B22AAD52C32672000CDD49D /* EditProfileOptions.swift in Sources */,
 				8B818B3A2C2BCD480074F582 /* ExploreViewModel.swift in Sources */,
 				8BA10F932C251E3500D52B52 /* ExploreView.swift in Sources */,
 				8BA10F9F2C252D5A00D52B52 /* ProfileHeaderView.swift in Sources */,
