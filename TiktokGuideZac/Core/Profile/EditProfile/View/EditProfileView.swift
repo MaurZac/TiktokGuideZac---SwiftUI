@@ -11,6 +11,11 @@ import PhotosUI
 struct EditProfileView: View {
     @State private var selectedPickerItem: PhotosPickerItem?
     @State private var profileImage: Image?
+    @Environment(\.dismiss) var dismiss
+    @State private var uiImage: UIImage?
+    @StateObject var manager = EditProfileManager(imageUploader: ImageUploader())
+    
+    let user: User
     var body: some View {
         NavigationStack {
             VStack{
@@ -20,18 +25,13 @@ struct EditProfileView: View {
                             image
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 64, height: 64)
+                                .frame(width: avatarSize.dimension, height: avatarSize.dimension)
                                 .clipShape(Circle())
                         }else {
-                            Image(systemName: "person.circle.fill")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 64, height: 64)
-                                .clipShape(Circle())
-                                .foregroundStyle(Color(.systemGray4))
+                            AvatarView(user: user, size: avatarSize)
                         }
-                        Text("Change photo")
                     }
+                    Text("Change your photo")
                 }
                 .padding()
                 
@@ -40,9 +40,9 @@ struct EditProfileView: View {
                         .font(.footnote)
                         .foregroundStyle(Color(.systemGray2))
                         .fontWeight(.semibold)
-                    EditProfileOptionRowView(option: EditProfileOptions.name, value: "Mauricio")
-                    EditProfileOptionRowView(option: EditProfileOptions.username, value: "MaurZac")
-                    EditProfileOptionRowView(option: EditProfileOptions.bio, value: "Dev IOS")
+                    EditProfileOptionRowView(option: EditProfileOptions.name, value: user.fullName)
+                    EditProfileOptionRowView(option: EditProfileOptions.username, value: user.userName)
+                    EditProfileOptionRowView(option: EditProfileOptions.bio, value: user.bio ?? "lifestyle ")
                 }
                 .font(.subheadline)
                 .padding()
@@ -52,15 +52,16 @@ struct EditProfileView: View {
             .task(id: selectedPickerItem) {
                 await loadImage(fromItem: selectedPickerItem)
             }
-            .navigationDestination(for: EditProfileOptions.self, destination: { option in
-                Text(option.title)
-            })
+            .navigationDestination(for: EditProfileOptions.self) { option in
+                EditProfileDetailView(user: user, option: option)
+            }
             .navigationTitle("Edit Profile")
             .navigationBarTitleDisplayMode(.inline)
+            
             .toolbar{
                 ToolbarItem(placement:.topBarLeading){
                     Button {
-                        
+                        dismiss()
                     } label: {
                         Text("Cancel")
                     }
@@ -72,7 +73,7 @@ struct EditProfileView: View {
                 
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        
+                        onDoneTapped()
                     } label: {
                         Text("Done")
                     }
@@ -82,9 +83,6 @@ struct EditProfileView: View {
                 }
                 
             }
-            
-            
-            
         }
     }
 }
@@ -94,25 +92,25 @@ extension EditProfileView {
         guard let item else { return }
         guard let data = try? await item.loadTransferable(type: Data.self) else { return }
         guard let uiImage = UIImage(data: data) else {return }
+        self.uiImage = uiImage
         self.profileImage = Image(uiImage: uiImage)
+    }
+    
+    func onDoneTapped(){
+        Task{
+            guard let uiImage else {return }
+            print(uiImage)
+            await manager.uploadProfileImage(uiImage)
+            dismiss()
+        }
+    }
+    var avatarSize: AvatarSize {
+        return .large
     }
 }
 
 #Preview {
-    EditProfileView()
+    EditProfileView(user: DeveloperPreview.user)
 }
 
-struct EditProfileOptionRowView: View {
-    let option: EditProfileOptions
-    let value: String
-    var body: some View {
-        NavigationLink(value: option){
-            HStack{
-                Text(option.title)
-                Spacer()
-                Text(value)
-            }
-        }
-        .foregroundStyle(.primary)
-    }
-}
+
