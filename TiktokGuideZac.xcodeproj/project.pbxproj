@@ -17,6 +17,9 @@
 		8B22AAE22C373BE900CDD49D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8B22AAE12C373BE900CDD49D /* Kingfisher */; };
 		8B22AAE72C373C7600CDD49D /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22AAE62C373C7600CDD49D /* AvatarView.swift */; };
 		8B22AAE92C37B1A800CDD49D /* AvatarSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22AAE82C37B1A800CDD49D /* AvatarSize.swift */; };
+		8B22AAED2C38C56900CDD49D /* MediaSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22AAEC2C38C56900CDD49D /* MediaSelectorView.swift */; };
+		8B22AAEF2C38CC1E00CDD49D /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22AAEE2C38CC1E00CDD49D /* UploadPostView.swift */; };
+		8B22AAF22C3B069600CDD49D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B22AAF12C3B069600CDD49D /* Movie.swift */; };
 		8B818B1C2C266C480074F582 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 8B818B1B2C266C480074F582 /* FirebaseAppCheck */; };
 		8B818B1E2C2674660074F582 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B818B1D2C2674660074F582 /* AuthService.swift */; };
 		8B818B202C2675820074F582 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B818B1F2C2675820074F582 /* LoginViewModel.swift */; };
@@ -68,6 +71,9 @@
 		8B22AADE2C34859C00CDD49D /* EditProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileManager.swift; sourceTree = "<group>"; };
 		8B22AAE62C373C7600CDD49D /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		8B22AAE82C37B1A800CDD49D /* AvatarSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSize.swift; sourceTree = "<group>"; };
+		8B22AAEC2C38C56900CDD49D /* MediaSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaSelectorView.swift; sourceTree = "<group>"; };
+		8B22AAEE2C38CC1E00CDD49D /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		8B22AAF12C3B069600CDD49D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		8B818B1D2C2674660074F582 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8B818B1F2C2675820074F582 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8B818B212C2677400074F582 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 		8B22AACF2C322DBB00CDD49D /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
+				8B22AAEA2C37CDE400CDD49D /* ViewModel */,
 				8B22AADD2C34858900CDD49D /* Manager */,
 				8B22AAD32C32670E00CDD49D /* Model */,
 				8B22AAD02C322DC300CDD49D /* View */,
@@ -195,6 +202,30 @@
 			isa = PBXGroup;
 			children = (
 				8B22AAE82C37B1A800CDD49D /* AvatarSize.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8B22AAEA2C37CDE400CDD49D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B22AAEB2C38C55400CDD49D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B22AAEC2C38C56900CDD49D /* MediaSelectorView.swift */,
+				8B22AAEE2C38CC1E00CDD49D /* UploadPostView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B22AAF02C3B068500CDD49D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8B22AAF12C3B069600CDD49D /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -326,6 +357,8 @@
 		8BA10F822C24DC4D00D52B52 /* UploadingMedia */ = {
 			isa = PBXGroup;
 			children = (
+				8B22AAF02C3B068500CDD49D /* Model */,
+				8B22AAEB2C38C55400CDD49D /* Views */,
 				8B22AADA2C34825C00CDD49D /* Service */,
 			);
 			path = UploadingMedia;
@@ -588,6 +621,7 @@
 				8B818B202C2675820074F582 /* LoginViewModel.swift in Sources */,
 				8B818B322C2B28930074F582 /* User.swift in Sources */,
 				8BA10F8F2C24FCB700D52B52 /* FeedView.swift in Sources */,
+				8B22AAED2C38C56900CDD49D /* MediaSelectorView.swift in Sources */,
 				8BA10FB72C263A6A00D52B52 /* RegistrationView.swift in Sources */,
 				8B818B342C2B2AF80074F582 /* UserService.swift in Sources */,
 				8B22AADC2C34826C00CDD49D /* ImageUploader.swift in Sources */,
@@ -603,10 +637,12 @@
 				8BA10FA32C25425000D52B52 /* UserStatView.swift in Sources */,
 				8BA10F9B2C252CD700D52B52 /* PostGridView.swift in Sources */,
 				8BA10FAA2C25E5B100D52B52 /* FeedViewModel.swift in Sources */,
+				8B22AAEF2C38CC1E00CDD49D /* UploadPostView.swift in Sources */,
 				8BA10FA52C25DF1400D52B52 /* Post.swift in Sources */,
 				8BA10FBB2C264E2300D52B52 /* AuthenticationFormProtocol.swift in Sources */,
 				8B818B222C2677400074F582 /* RegistrationViewModel.swift in Sources */,
 				8BA10F712C24A52D00D52B52 /* ContentView.swift in Sources */,
+				8B22AAF22C3B069600CDD49D /* Movie.swift in Sources */,
 				8BA10F6F2C24A52D00D52B52 /* TiktokGuideZacApp.swift in Sources */,
 				8B22AAD92C33B94F00CDD49D /* EditProfileOptionRowView.swift in Sources */,
 				8B22AAD22C322DD400CDD49D /* EditProfileView.swift in Sources */,

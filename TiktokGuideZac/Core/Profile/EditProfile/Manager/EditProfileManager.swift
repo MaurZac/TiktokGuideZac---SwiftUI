@@ -10,6 +10,7 @@ import Firebase
 
 class EditProfileManager: ObservableObject{
     private let imageUploader: ImageUploader
+    @Published var profileImage: UIImage?
     
     init(imageUploader: ImageUploader) {
         self.imageUploader = imageUploader
@@ -19,6 +20,7 @@ class EditProfileManager: ObservableObject{
         do{
             let profileImageUrl = try await imageUploader.uploadImage(image: uiimage)
             try await updateUserProfileImageUrl(profileImageUrl)
+            self.profileImage = uiimage
         }catch{
             print("Debug: Handle image upload error here..")
         }
